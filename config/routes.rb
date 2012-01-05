@@ -1,14 +1,9 @@
 SampleApp::Application.routes.draw do
-  resources :dttests
+
   resources :users
   
   
-  match '/signup',  :to => 'dttests#new'
-  match '/show',    :to => 'dttests#show'
-  
-  match '/contact', :to => 'dttests#contact'
-  match '/about',   :to => 'dttests#about'
-  match '/help',    :to => 'dttests#help'
+  match '/signup',  :to => 'users#new'
 
 
   # The priority is based upon order of creation:
@@ -60,7 +55,7 @@ SampleApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'dttests#home'
+  root :to => 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
