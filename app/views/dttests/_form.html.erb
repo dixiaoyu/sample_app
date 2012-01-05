@@ -1,0 +1,15 @@
+<%= form_for(@dttest) do |signup_form| %> 
+  <div class="field">
+    <%= signup_form.label :passport %><br />
+    <%= signup_form.text_field :passport %>
+  </div>
+  
+  <div class="field">
+    <%= signup_form.label :password %><br />
+    <%= signup_form.text_field :password %>
+  </div>
+  
+  <div class="actions">
+    <%= signup_form.submit %>
+  </div>
+<% end %>
